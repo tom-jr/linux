@@ -53,4 +53,53 @@ du -b arquive
 ```
 
 
-na proxima aula pag 51.
+**GZIP** compactação gerar um '.gz'. No caso de arquivo de texto, o gzip concatena tudo
+em um único arquivo
+
+-cr cria e compactar
+```shell
+gzip -cr *.txt > archive.gz
+```
+
+Extrai e deleta o arquivo '.gz' de extração
+```shell
+gunzip archive.gz
+```
+
+**ZIP** compacta uma extensão '.zip'
+param: nome do arquivo, arquivos a serem compactados
+```shell
+zip archive.zip *.txt #compacta 
+unzip archive.zip #descompacta 
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
