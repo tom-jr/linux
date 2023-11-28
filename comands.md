@@ -358,3 +358,24 @@ deleta user
 ```shell
 sudo userdel user
 ```
+
+# Instalando Packages APT(Advanced Package Tool)
+Atualiza a lista de packages
+```shell
+sudo apt update
+```
+
+Atualiza o sistema
+```shell
+sudo apt upgrade
+```
+
+Instala um pacote
+```shell
+sudo apt install package_name
+```
+
+Remove um pacote
+```shell
+sudo apt remove package_name
+```
