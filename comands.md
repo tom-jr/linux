@@ -278,3 +278,83 @@ param: nome do arquivo, arquivos a serem compactados
 zip archive.zip *.txt #compacta 
 unzip archive.zip #descompacta 
 ```
+
+## ADM de Users
+**sudo** usamos sempre que precisamos executar comandos que necessitam do
+superUser
+
+Comando para listar dados de forma detalhada, inclui as permissões.
+```shell
+ls -l #[long listing]
+```
+**chmdo** comando para atribuir permissões, atuando diretamente nos níveis de dono, grupo e outros
+
+Adiciona permissão de leitura e escrita para dono, grupo, outros
+Obs: sem espaço após a virgúla.
+```shell
+sudo chmod u=rw,g=rw,o=rw 
+```
+r,w,x
+
+| BIN | OCTA |
+|-----|------|
+| 000 | 0    |
+| 001 | 1    |
+| 010 | 2    |
+| 011 | 3    |
+| 100 | 4    |
+| 101 | 5    |
+| 110 | 6    |
+
+Adiciona a mesma permissão utilizando notação OCTAL
+```shell
+sudo chmod 666 archive #110=6,110=6,110=6 -rw-rw-rw-
+```
+
+**addgroup**
+Adiciona novo grupo
+```shell
+sudo addgroup group_name
+```
+
+Adicionando novo user
+cria um user e group automaticamente
+```shell
+sudo adduser user_name
+```
+
+Adiciona user ao group se o group não existe ele é criado
+```shell
+sudo add group user group
+```
+
+mostra o group do user
+```shell
+groups user
+```
+
+
+Cria user e ja o adiciona a um group(group precisa pre-existir)
+```shell
+adduser user group
+```
+
+muda o grupo do arquivo ou dir
+```shell
+sudo chgrp group archive_or_dir
+```
+
+muda o dono do arquivo ou dir
+```shell
+sudo chown user archive_or_dir
+```
+
+deleta group
+```shell
+sudo groudel group
+```
+
+deleta user
+```shell
+sudo userdel user
+```
