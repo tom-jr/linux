@@ -30,4 +30,13 @@ Remove um pacote
 sudo apt remove package_name
 ```
 
-vamos ao cap 08
+Apenas baixa o pacote sem o instalá-lo. Deixado-o no dir : /var/cache/apt/archives/
+```shell
+sudo apt install -d nome_do_pacote
+```
+
+Retorna dados do programa que especificando, podendo gerenciá-lo com comandos
+- {start|stop|restart|reload|force-reload|status}
+```shell
+sudo service programa
+```
