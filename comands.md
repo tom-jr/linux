@@ -311,6 +311,11 @@ Adiciona a mesma permissão utilizando notação OCTAL
 sudo chmod 666 archive #110=6,110=6,110=6 -rw-rw-rw-
 ```
 
+executa de forma recursiva
+```shell
+chmod -R 777 /dir
+```
+
 **addgroup**
 Adiciona novo grupo
 ```shell
