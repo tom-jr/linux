@@ -7,3 +7,4 @@
 - [Administração de usuários](src/annotations/capitulo-6/adm-users.md)
 - [Instalando pacotes e apps](src/annotations/capitulo-7/install-apps-packages.md)
 - [Processos](src/annotations/capitulo-9/processos.md)
+- [Shell Scripts](src/annotations/capitulo-10/shell-script.md)
