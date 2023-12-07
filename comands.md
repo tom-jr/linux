@@ -476,3 +476,19 @@ else
 fi
 
 ```
+## Cron
+
+Lista se existe tarefas agendadas para o usuário especificado
+```shell
+crontab -u user-name -l
+```
+
+Permite criar tarefas para usuários especificado
+```shell
+crontab -u user-name -e
+```
+
+Carrega as configurações do arquivo (.bashrc) para o shell atual
+```shell
+source .bashrc
+```

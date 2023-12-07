@@ -7,7 +7,7 @@ Salvamos os scripts em aquivos de extensão **.sh**
 #! /bin/bash  
 echo "Contando linhas ..."
 
-# comando para o console prar por 5 segundos
+# comando para o console parar por 5 segundos
 sleep 5 
 
 #salva o retorno do comando em uma var chamada LINHAS
@@ -34,9 +34,25 @@ CONSULTAR=$(ls ~ | grep $ARCHIVE)
 if [ -z $CONSULTAR ]; then
         echo "$ARCHIVE não foi encontrado!"
 else
-        echo "Arquivo encontado"
+        echo "Arquivo encontrado"
 fi
 
 ```
 
-ESTAMOS NA PG 107
+## Cron
+
+Lista se existe tarefas agendadas para o usuário especificado
+```shell
+crontab -u user-name -l
+```
+
+Permite criar tarefas para usuários especificado
+```shell
+crontab -u user-name -e
+```
+
+Carrega as configurações do arquivo (.bashrc) para o shell atual
+```shell
+source .bashrc
+```
+
