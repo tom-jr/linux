@@ -234,10 +234,16 @@ tar -xvf archive.tar
 ```shell
 tar -zcvf archive.tar.gz *.txt
 ```
-descompactar tar.gz
+Descompactar tar.gz
 ```shell
 tar -zxvf archive.tar.gz
 ```
+
+Descompactar tar.gz e os demais apontando para um dir especifico
+```shell
+tar -zxvf archive.tar.gz -C dir/
+```
+
 **tar.bz2** Cria um agrupamento e compacta com bzip2. Bzip dois é mais eficiente em abundância
 de dados do que tar.gz.
 
@@ -491,4 +497,10 @@ crontab -u user-name -e
 Carrega as configurações do arquivo (.bashrc) para o shell atual
 ```shell
 source .bashrc
+```
+
+Comando faz download do arquivo referenciado no link
+param -c é para continuar o download caso tenha sido interrompido
+```shell
+wget -c link-download
 ```
