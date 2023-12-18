@@ -504,3 +504,9 @@ param -c é para continuar o download caso tenha sido interrompido
 ```shell
 wget -c link-download
 ```
+
+
+Encerrando serviço na porta 8080
+```shell
+kill $(lsof -t -i:8080)
+```
